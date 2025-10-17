@@ -182,12 +182,14 @@
 .footer .reference .right ul {
   height: 139px;
   gap: 84px;
+  text-align: center;
 }
-.footer .reference .right li {
+/* 用text-align：center替代下面的做法 */
+/* .footer .reference .right li {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 .footer .reference .right ul h5 {
   color: #969696;
   margin-top: 10px;
