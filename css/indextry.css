@@ -6,8 +6,35 @@
 
 .index .w {
   /* 这个w前面要带上父亲，100%才起效果 */
+  position: relative;
+  width: 1240px;
   height: 100%;
-  background: url("../uploads/banner1.png");
+  background: url("../uploads/banner1.png") center/ cover;
+}
+.banner {
+  width: 78px;
+  height: 22px;
+  position: absolute;
+  top: 454px;
+  left: 1123px;
+}
+.banner ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.banner li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.banner li.active {
+  opacity: 1;
+  width: 16px;
+  height: 16px;
 }
 .category {
   width: 250px;
