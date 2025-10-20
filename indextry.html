@@ -152,9 +152,13 @@
             </li>
           </ul>
         </div>
+        <i id="arrow-left" class="iconfont icon-arrow-left-bold"></i>
+        <i id="arrow-right" class="iconfont icon-arrow-right-bold"></i>
         <div class="banner">
           <ul>
             <li class="active"></li>
+            <li></li>
+            <li></li>
             <li></li>
             <li></li>
           </ul>
@@ -352,21 +356,7 @@
         </div>
       </div>
     </div>
-    <script>
-      const banner = document.querySelector('.index .w');
-      // banner.style.backgroundImage = 'url(" uploads/banner1.png ")';
-      let i = 0;
-      setInterval(function(){
-        i ++;
-        if(i>3) {i = 1}
-        // console.log(i)
-        banner.style.backgroundImage = `url(" uploads/banner${i}.png ")`;
-        //remove前要保证，有存在不然就会报错
-        document.querySelector('.banner .active').classList.remove("active")
-        const li = document.querySelector(`.banner li:nth-child(${i})`);
-        li.classList.add("active")
-
-      },1000)
-    </script>
+    <!-- 引入js -->
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -12,11 +12,35 @@
   background: url("../uploads/banner1.png") center/ cover;
 }
 .banner {
-  width: 78px;
+  width: 120px;
   height: 22px;
   position: absolute;
-  top: 454px;
-  left: 1123px;
+  top: 443px;
+  left: 1062px;
+}
+#arrow-left {
+  color: #f5f5f5;
+  font-size: 36px;
+  font-weight: 900;
+  top: 50%;
+  left: 300px;
+  margin-top: -18px;
+  position: absolute;
+}
+#arrow-left:hover {
+  color: #00be9a;
+}
+#arrow-right {
+  color: #f5f5f5;
+  font-size: 36px;
+  font-weight: bold;
+  top: 50%;
+  left: 1168px;
+  margin-top: -18px;
+  position: absolute;
+}
+#arrow-right:hover {
+  color: #00be9a;
 }
 .banner ul {
   height: 100%;
@@ -28,13 +52,16 @@
   height: 14px;
   border-radius: 50%;
   background-color: #ffffff;
-  opacity: 0.4;
+  /* opacity: 0.4; */
   cursor: pointer;
 }
 .banner li.active {
-  opacity: 1;
+  /* opacity: 1;
   width: 16px;
-  height: 16px;
+  height: 16px; */
+  /* 设置透明度，以及改变大小的方式会将会改变间距，出现抖动 */
+  /* box-shadow 的取值格式为：水平偏移量 垂直偏移量 模糊半径 阴影大小 阴影颜色 */
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
 }
 .category {
   width: 250px;
