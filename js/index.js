@@ -60,3 +60,15 @@ banner.addEventListener("mouseleave", function () {
   }, 1000);
   console.log("我离开啦");
 });
+
+const ul = document.querySelector(".banner ul");
+ul.addEventListener("click", function (e) {
+  if (e.target.tagName === "LI") {
+    document.querySelector(".banner li.active").classList.remove("active");
+    e.target.classList.add("active");
+    // 自定义属性
+    let id = +e.target.dataset.id;
+    console.log(id);
+    banner.style.backgroundImage = `url('uploads/banner${id}.png')`;
+  }
+});
