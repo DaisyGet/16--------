@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body style="height: 2000px">
+    <button style="margin-top: 200px" onclick="scrollToTop()">
+      滚动到顶部
+    </button>
+
+    <script>
+      // 监听 scroll 事件
+      window.addEventListener("scroll", function () {
+        console.log("滚动位置变化了，scrollTop =", window.scrollY);
+      });
+
+      // 用 scrollTo() 触发滚动
+      function scrollToTop() {
+        window.scrollTo(0, 0); // 滚动到顶部
+      }
+
+      // 直接修改 scrollTop 触发滚动
+      setInterval(() => {
+        window.scrollTo(0, 0); // 2秒后滚动到500px位置
+      }, 1000);
+    </script>
+  </body>
+</html>
